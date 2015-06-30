@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Non You Tube Player View Controller-->
+        <scene sceneID="oiw-P8-UvG">
+            <objects>
+                <viewController storyboardIdentifier="BMNonYouTubePlayerViewController" id="Hh6-XY-891" customClass="BMNonYouTubePlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sny-Jw-AtY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bit-e4-W2v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ODg-LY-KlG">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="videoView" destination="ODg-LY-KlG" id="e45-Z4-Tw1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="isP-PG-fmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1303" y="425"/>
+        </scene>
+        <!--You Tube Player View Controller-->
+        <scene sceneID="4RE-aW-wnd">
+            <objects>
+                <viewController storyboardIdentifier="BMYouTubePlayerViewController" id="7hD-NZ-INZ" customClass="BMYouTubePlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hve-rX-QO8"/>
+                        <viewControllerLayoutGuide type="bottom" id="aVc-1g-jM5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ACI-Rm-vqN" customClass="YTPlayerView">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="ytPlayerViewForPhone" destination="ACI-Rm-vqN" id="ISI-KH-bBp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0FA-mB-p4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1303" y="12"/>
+        </scene>
+        <!--Offer List View Controller-->
+        <scene sceneID="ioD-GK-eCW">
+            <objects>
+                <viewController storyboardIdentifier="BMOfferListViewController" id="igX-K1-IqI" customClass="BMOfferListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BV6-Sb-bid"/>
+                        <viewControllerLayoutGuide type="bottom" id="aRW-uc-q4Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Dl-XY-bAK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4qy-2S-7Fs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="241"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

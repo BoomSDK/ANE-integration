@@ -1,0 +1,30 @@
+<extension xmlns="http://ns.adobe.com/air/extension/4.0">
+	<id>com.boom.nativeExtensions.BoomVideo</id>
+	<versionNumber>1.0.0</versionNumber>
+	<platforms>
+		<platform name="iPhone-ARM">
+			<applicationDeployment>
+				<nativeLibrary>libBoomVideoIosExtension.a</nativeLibrary>
+				<initializer>BoomVideoExtensionInitializer</initializer>
+				<finalizer>BoomVideoExtensionFinalizer</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="Android-ARM">
+			<applicationDeployment>
+				<nativeLibrary>BoomVideoAndroidExtension.jar</nativeLibrary>
+				<initializer>com.boom.nativeExtensions.boomVideo.BoomVideoExtension</initializer>
+				<finalizer>com.boom.nativeExtensions.boomVideo.BoomVideoExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="Android-x86">
+			<applicationDeployment>
+				<nativeLibrary>BoomVideoAndroidExtension.jar</nativeLibrary>
+				<initializer>com.boom.nativeExtensions.boomVideo.BoomVideoExtension</initializer>
+				<finalizer>com.boom.nativeExtensions.boomVideo.BoomVideoExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="default">
+			<applicationDeployment/>
+		</platform>
+	</platforms>
+</extension>
