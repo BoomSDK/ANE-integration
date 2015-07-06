@@ -22,5 +22,8 @@ package com.boom.nativeExtensions.boomVideo {
 
 			_instance = this;
 		}
+
+		public function init():void {
+		}
 	}
 }

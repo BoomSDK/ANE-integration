@@ -15,8 +15,8 @@ package {
 		
 		public function BoomVideoTest() {
 			
-			
 			_boomVideo = new BoomVideo();
+			_boomVideo.init();
 		}
 	}
 }

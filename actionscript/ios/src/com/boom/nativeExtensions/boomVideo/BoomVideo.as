@@ -38,5 +38,10 @@ package com.boom.nativeExtensions.boomVideo {
 			trace(sEvt.code);
 		}
 
+		public function init():void {
+			
+			extensionContext.call("init");
+		}
+
 	}
 }
