@@ -1,23 +1,32 @@
 package {
 
-	import com.boom.nativeExtensions.boomVideo.BoomVideo;
+	import citrus.core.starling.StarlingCitrusEngine;
 
-	import flash.display.Sprite;
+	import feathers.themes.MetalWorksDesktopTheme;
 	
 	[SWF(backgroundColor="#FFFFFF", frameRate="60", width="1024", height="768")]
 	
 	/**
 	 * @author Aymeric
 	 */
-	public class BoomVideoTest extends Sprite {
-		
-		private var _boomVideo:BoomVideo;
+	public class BoomVideoTest extends StarlingCitrusEngine {
 		
 		public function BoomVideoTest() {
+
+		}
+
+		override public function initialize():void {
+			super.initialize();
 			
-			_boomVideo = new BoomVideo();
-			_boomVideo.init("ca92b245-7951-43f3-b76d-ab10f9ade5c3", "ca92b245-7951-43f3-b76d-ab10f9ade5c3");
-			_boomVideo.showOfferListVideo();
+			setUpStarling();
+		}
+
+		override public function handleStarlingReady():void {
+			super.handleStarlingReady();
+			
+			new MetalWorksDesktopTheme();
+
+			state = new BoomVideoTestState();
 		}
 	}
 }

@@ -85,7 +85,7 @@
     <fullScreen>true</fullScreen>
     <autoOrients>true</autoOrients>
     <visible>true</visible>
-    <renderMode>gpu</renderMode>
+    <renderMode>direct</renderMode>
   </initialWindow>
   <!-- We recommend omitting the supportedProfiles element, -->
   <!-- which in turn permits your application to be deployed to all -->
