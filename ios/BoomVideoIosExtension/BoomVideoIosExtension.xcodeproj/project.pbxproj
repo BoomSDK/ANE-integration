@@ -24,6 +24,8 @@
 		B079C3F81B42B381009EC930 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C3F61B42B381009EC930 /* GoogleOpenSource.framework */; };
 		B079C3F91B42B381009EC930 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C3F71B42B381009EC930 /* GooglePlus.framework */; };
 		B0FFA44C1B4BD3A300A165C5 /* libBoomVideoVAST_SDKLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FFA44B1B4BD3A300A165C5 /* libBoomVideoVAST_SDKLibrary.a */; };
+		B0FFA44F1B4BDA0E00A165C5 /* BoomVideoHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FFA44E1B4BDA0E00A165C5 /* BoomVideoHelpers.m */; };
+		B0FFA4521B4BDE4400A165C5 /* TypeConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FFA4511B4BDE4400A165C5 /* TypeConversion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +67,10 @@
 		B0FFA4491B4BD38000A165C5 /* BoomVideoTrackerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoomVideoTrackerDelegate.h; sourceTree = "<group>"; };
 		B0FFA44A1B4BD38000A165C5 /* BusinessRuleExecuterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessRuleExecuterDelegate.h; sourceTree = "<group>"; };
 		B0FFA44B1B4BD3A300A165C5 /* libBoomVideoVAST_SDKLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBoomVideoVAST_SDKLibrary.a; sourceTree = "<group>"; };
+		B0FFA44D1B4BDA0E00A165C5 /* BoomVideoHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoomVideoHelpers.h; sourceTree = "<group>"; };
+		B0FFA44E1B4BDA0E00A165C5 /* BoomVideoHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoomVideoHelpers.m; sourceTree = "<group>"; };
+		B0FFA4501B4BDE4400A165C5 /* TypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeConversion.h; sourceTree = "<group>"; };
+		B0FFA4511B4BDE4400A165C5 /* TypeConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeConversion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,10 @@
 				B0FFA4421B4BD38000A165C5 /* include */,
 				B079C3CD1B42B19A009EC930 /* FlashRuntimeExtensions.h */,
 				B079C3B81B42B175009EC930 /* BoomVideoIosExtension.m */,
+				B0FFA44D1B4BDA0E00A165C5 /* BoomVideoHelpers.h */,
+				B0FFA44E1B4BDA0E00A165C5 /* BoomVideoHelpers.m */,
+				B0FFA4501B4BDE4400A165C5 /* TypeConversion.h */,
+				B0FFA4511B4BDE4400A165C5 /* TypeConversion.m */,
 			);
 			path = BoomVideoIosExtension;
 			sourceTree = "<group>";
@@ -214,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0FFA4521B4BDE4400A165C5 /* TypeConversion.m in Sources */,
+				B0FFA44F1B4BDA0E00A165C5 /* BoomVideoHelpers.m in Sources */,
 				B079C3B91B42B175009EC930 /* BoomVideoIosExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,7 +16,8 @@ package {
 		public function BoomVideoTest() {
 			
 			_boomVideo = new BoomVideo();
-			_boomVideo.init();
+			_boomVideo.init("ca92b245-7951-43f3-b76d-ab10f9ade5c3", "ca92b245-7951-43f3-b76d-ab10f9ade5c3");
+			_boomVideo.showOfferListVideo();
 		}
 	}
 }

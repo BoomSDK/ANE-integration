@@ -10,12 +10,42 @@
 #import "FlashRuntimeExtensions.h"
 #import "BMResourceManager.h"
 
+#import "BoomVideoHelpers.h"
+#import "TypeConversion.h"
+
 #define DEFINE_ANE_FUNCTION(fn) FREObject (fn)(FREContext context, void* functionData, uint32_t argc, FREObject argv[])
 #define MAP_FUNCTION(fn, data) { (const uint8_t*)(#fn), (data), &(fn) }
 
+BoomVideoHelpers* boomVideoHelpers;
+TypeConversion* typeConverter;
+
 DEFINE_ANE_FUNCTION(init) {
     
-    [[BMResourceManager sharedInstance] showVideoForGUID:@"ca92b245-7951-43f3-b76d-ab10f9ade5c3" withType:BMPreroll];
+    NSString* key;
+    [typeConverter FREGetObject:argv[0] asString:&key];
+    
+    boomVideoHelpers = [[BoomVideoHelpers alloc] initWithContext:context andKey:key];
+    
+    return NULL;
+}
+
+DEFINE_ANE_FUNCTION(showOfferListVideo) {
+    
+    [boomVideoHelpers showOfferListVideo];
+    
+    return NULL;
+}
+
+DEFINE_ANE_FUNCTION(showPrerollVideo) {
+    
+    [boomVideoHelpers showPrerollVideo];
+    
+    return NULL;
+}
+
+DEFINE_ANE_FUNCTION(showRewardVideo) {
+    
+    [boomVideoHelpers showRewardVideo];
     
     return NULL;
 }
@@ -23,11 +53,16 @@ DEFINE_ANE_FUNCTION(init) {
 void BoomVideoContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToSet, const FRENamedFunction** functionsToSet) {
     
     static FRENamedFunction functionMap[] = {
-        MAP_FUNCTION(init, NULL)
+        MAP_FUNCTION(init, NULL),
+        MAP_FUNCTION(showOfferListVideo, NULL),
+        MAP_FUNCTION(showPrerollVideo, NULL),
+        MAP_FUNCTION(showRewardVideo, NULL)
     };
     
     *numFunctionsToSet = sizeof(functionMap) / sizeof(FRENamedFunction);
     *functionsToSet = functionMap;
+    
+    typeConverter = [[TypeConversion alloc] init];
 }
 
 void BoomVideoContextFinalizer(FREContext ctx) {

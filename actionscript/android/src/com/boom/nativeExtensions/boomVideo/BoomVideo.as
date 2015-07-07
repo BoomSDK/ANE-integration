@@ -38,9 +38,24 @@ package com.boom.nativeExtensions.boomVideo {
 			trace(sEvt.code);
 		}
 
-		public function init():void {
+		public function init(iOSKey:String, androidKey:String):void {
 			
-			extensionContext.call("init");
+			extensionContext.call("init", androidKey);
+		}
+
+		public function showOfferListVideo():void {
+
+			extensionContext.call("showOfferListVideo");
+		}
+
+		public function showPrerollVideo():void {
+
+			extensionContext.call("showPrerollVideo");
+		}
+
+		public function showRewardVideo():void {
+
+			extensionContext.call("showRewardVideo");
 		}
 
 	}

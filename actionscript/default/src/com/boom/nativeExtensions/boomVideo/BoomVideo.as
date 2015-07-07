@@ -23,7 +23,16 @@ package com.boom.nativeExtensions.boomVideo {
 			_instance = this;
 		}
 
-		public function init():void {
+		public function init(iOSKey:String, androidKey:String):void {
+		}
+
+		public function showOfferListVideo():void {
+		}
+
+		public function showPrerollVideo():void {
+		}
+
+		public function showRewardVideo():void {
 		}
 	}
 }
