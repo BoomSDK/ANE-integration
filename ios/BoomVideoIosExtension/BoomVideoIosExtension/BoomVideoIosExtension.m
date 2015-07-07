@@ -23,6 +23,7 @@ DEFINE_ANE_FUNCTION(init) {
 void BoomVideoContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToSet, const FRENamedFunction** functionsToSet) {
     
     static FRENamedFunction functionMap[] = {
+        MAP_FUNCTION(init, NULL)
     };
     
     *numFunctionsToSet = sizeof(functionMap) / sizeof(FRENamedFunction);

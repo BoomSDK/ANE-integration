@@ -9,10 +9,10 @@ android/.classpath
 android/AndroidManifest.xml
 android/bin/AndroidManifest.xml
 android/bin/jarlist.cache
+android/bin/res
 android/gen
 android/proguard-project.txt
 android/project.properties
-android/res
 bin/BoomVideo.ane
 bin/BoomVideo.swc
 *.xcuserstate

@@ -6,16 +6,19 @@
 //  Copyright (c) 2014 Boom. All rights reserved.
 //
 
-
-
 #import <UIKit/UIKit.h>
+#import "BMResourceManager.h"
 #import "BusinessRuleExecuterDelegate.h"
 #import "AnalyticsTrackingDelegate.h"
+#import "BMBasePlayerViewController.h"
+
+
 typedef void(^offerlistBrandliftResponse)(NSString *responseString);
 @interface BMBusinessRuleExecuter : NSObject <BusinessRuleExecuterDelegate>
 
 @property (nonatomic,assign) id<AnalyticsTrackingDelegate> analyticsDelegate;
 @property (strong, nonatomic) offerlistBrandliftResponse brandliftBlock;
+@property (strong, nonatomic) BMBasePlayerViewController *basePlayerController;
 
 - (void)executeBusinessRuleForUI:(NSArray*)array;
 

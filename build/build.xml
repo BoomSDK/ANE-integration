@@ -17,16 +17,20 @@
 
 		<copy file="../temp/ios/build/Release-iphoneos/lib${name}IosExtension.a" todir="../temp/ios" overwrite="true" />
 		
+		<copy todir="../temp/ios/BoomResources.bundle" overwrite="true">
+			<fileset dir="../ios/${name}IosExtension/BoomResources.bundle" />
+		</copy>
+		
 		<copy todir="../temp/GooglePlus.framework" overwrite="true">
-			<fileset dir="../ios/BoomVideoIosExtension/GooglePlus.framework" />
+			<fileset dir="../ios/${name}IosExtension/GooglePlus.framework" />
 		</copy>
 		
 		<copy todir="../temp/GoogleOpenSource.framework" overwrite="true">
-			<fileset dir="../ios/BoomVideoIosExtension/GoogleOpenSource.framework" />
+			<fileset dir="../ios/${name}IosExtension/GoogleOpenSource.framework" />
 		</copy>
 		
 		<copy todir="../temp/ios/GooglePlus.bundle" overwrite="true">
-			<fileset dir="../ios/BoomVideoIosExtension/GooglePlus.bundle" />
+			<fileset dir="../ios/${name}IosExtension/GooglePlus.bundle" />
 		</copy>
 
 		<delete dir="../temp/ios/build/" />

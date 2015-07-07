@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B079C3B91B42B175009EC930 /* BoomVideoIosExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B079C3B81B42B175009EC930 /* BoomVideoIosExtension.m */; };
-		B079C3DB1B42B29C009EC930 /* libBoomVideoVAST_SDKLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C3DA1B42B29C009EC930 /* libBoomVideoVAST_SDKLibrary.a */; };
 		B079C3DD1B42B2C5009EC930 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C3DC1B42B2C5009EC930 /* JavaScriptCore.framework */; };
 		B079C3DF1B42B2CE009EC930 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C3DE1B42B2CE009EC930 /* AddressBook.framework */; };
 		B079C3E11B42B2D3009EC930 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C3E01B42B2D3009EC930 /* AssetsLibrary.framework */; };
@@ -24,6 +23,7 @@
 		B079C3F51B42B316009EC930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C3F41B42B316009EC930 /* Foundation.framework */; };
 		B079C3F81B42B381009EC930 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C3F61B42B381009EC930 /* GoogleOpenSource.framework */; };
 		B079C3F91B42B381009EC930 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C3F71B42B381009EC930 /* GooglePlus.framework */; };
+		B0FFA44C1B4BD3A300A165C5 /* libBoomVideoVAST_SDKLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FFA44B1B4BD3A300A165C5 /* libBoomVideoVAST_SDKLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,17 +42,6 @@
 		B079C3B31B42B175009EC930 /* libBoomVideoIosExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBoomVideoIosExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B079C3B81B42B175009EC930 /* BoomVideoIosExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoomVideoIosExtension.m; sourceTree = "<group>"; };
 		B079C3CD1B42B19A009EC930 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
-		B079C3D01B42B286009EC930 /* AnalyticsTrackingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsTrackingDelegate.h; sourceTree = "<group>"; };
-		B079C3D11B42B286009EC930 /* BMBusinessRuleExecuter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMBusinessRuleExecuter.h; sourceTree = "<group>"; };
-		B079C3D21B42B286009EC930 /* BMResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMResourceManager.h; sourceTree = "<group>"; };
-		B079C3D31B42B286009EC930 /* BMVideoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMVideoData.h; sourceTree = "<group>"; };
-		B079C3D41B42B286009EC930 /* Boom_Video_Storyboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Boom_Video_Storyboard_iPad.storyboard; sourceTree = "<group>"; };
-		B079C3D51B42B286009EC930 /* Boom_Video_Storyboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Boom_Video_Storyboard_iPhone.storyboard; sourceTree = "<group>"; };
-		B079C3D61B42B286009EC930 /* BoomVideoTrackerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoomVideoTrackerDelegate.h; sourceTree = "<group>"; };
-		B079C3D71B42B286009EC930 /* BusinessRuleExecuterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessRuleExecuterDelegate.h; sourceTree = "<group>"; };
-		B079C3D81B42B286009EC930 /* mraid.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mraid.js; sourceTree = "<group>"; };
-		B079C3D91B42B286009EC930 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
-		B079C3DA1B42B29C009EC930 /* libBoomVideoVAST_SDKLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBoomVideoVAST_SDKLibrary.a; sourceTree = "<group>"; };
 		B079C3DC1B42B2C5009EC930 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		B079C3DE1B42B2CE009EC930 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		B079C3E01B42B2D3009EC930 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
@@ -68,6 +57,14 @@
 		B079C3F41B42B316009EC930 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B079C3F61B42B381009EC930 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
 		B079C3F71B42B381009EC930 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		B0FFA4441B4BD38000A165C5 /* AnalyticsTrackingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsTrackingDelegate.h; sourceTree = "<group>"; };
+		B0FFA4451B4BD38000A165C5 /* BMBasePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMBasePlayerViewController.h; sourceTree = "<group>"; };
+		B0FFA4461B4BD38000A165C5 /* BMBusinessRuleExecuter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMBusinessRuleExecuter.h; sourceTree = "<group>"; };
+		B0FFA4471B4BD38000A165C5 /* BMResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMResourceManager.h; sourceTree = "<group>"; };
+		B0FFA4481B4BD38000A165C5 /* BMVideoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMVideoData.h; sourceTree = "<group>"; };
+		B0FFA4491B4BD38000A165C5 /* BoomVideoTrackerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoomVideoTrackerDelegate.h; sourceTree = "<group>"; };
+		B0FFA44A1B4BD38000A165C5 /* BusinessRuleExecuterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessRuleExecuterDelegate.h; sourceTree = "<group>"; };
+		B0FFA44B1B4BD3A300A165C5 /* libBoomVideoVAST_SDKLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBoomVideoVAST_SDKLibrary.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +83,11 @@
 				B079C3E71B42B2E5009EC930 /* CoreText.framework in Frameworks */,
 				B079C3E51B42B2DF009EC930 /* CoreMotion.framework in Frameworks */,
 				B079C3E31B42B2D9009EC930 /* CoreLocation.framework in Frameworks */,
+				B0FFA44C1B4BD3A300A165C5 /* libBoomVideoVAST_SDKLibrary.a in Frameworks */,
 				B079C3F81B42B381009EC930 /* GoogleOpenSource.framework in Frameworks */,
 				B079C3E11B42B2D3009EC930 /* AssetsLibrary.framework in Frameworks */,
 				B079C3DF1B42B2CE009EC930 /* AddressBook.framework in Frameworks */,
 				B079C3DD1B42B2C5009EC930 /* JavaScriptCore.framework in Frameworks */,
-				B079C3DB1B42B29C009EC930 /* libBoomVideoVAST_SDKLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +111,6 @@
 				B079C3DE1B42B2CE009EC930 /* AddressBook.framework */,
 				B079C3DC1B42B2C5009EC930 /* JavaScriptCore.framework */,
 				B079C3B51B42B175009EC930 /* BoomVideoIosExtension */,
-				B079C3DA1B42B29C009EC930 /* libBoomVideoVAST_SDKLibrary.a */,
 				B079C3F61B42B381009EC930 /* GoogleOpenSource.framework */,
 				B079C3F71B42B381009EC930 /* GooglePlus.framework */,
 				B079C3B41B42B175009EC930 /* Products */,
@@ -132,34 +128,32 @@
 		B079C3B51B42B175009EC930 /* BoomVideoIosExtension */ = {
 			isa = PBXGroup;
 			children = (
-				B079C3CE1B42B286009EC930 /* include */,
+				B0FFA44B1B4BD3A300A165C5 /* libBoomVideoVAST_SDKLibrary.a */,
+				B0FFA4421B4BD38000A165C5 /* include */,
 				B079C3CD1B42B19A009EC930 /* FlashRuntimeExtensions.h */,
 				B079C3B81B42B175009EC930 /* BoomVideoIosExtension.m */,
 			);
 			path = BoomVideoIosExtension;
 			sourceTree = "<group>";
 		};
-		B079C3CE1B42B286009EC930 /* include */ = {
+		B0FFA4421B4BD38000A165C5 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				B079C3CF1B42B286009EC930 /* BoomVideoVAST_SDKLibrary */,
+				B0FFA4431B4BD38000A165C5 /* BoomVideoVAST_SDKLibrary */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		B079C3CF1B42B286009EC930 /* BoomVideoVAST_SDKLibrary */ = {
+		B0FFA4431B4BD38000A165C5 /* BoomVideoVAST_SDKLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				B079C3D01B42B286009EC930 /* AnalyticsTrackingDelegate.h */,
-				B079C3D11B42B286009EC930 /* BMBusinessRuleExecuter.h */,
-				B079C3D21B42B286009EC930 /* BMResourceManager.h */,
-				B079C3D31B42B286009EC930 /* BMVideoData.h */,
-				B079C3D41B42B286009EC930 /* Boom_Video_Storyboard_iPad.storyboard */,
-				B079C3D51B42B286009EC930 /* Boom_Video_Storyboard_iPhone.storyboard */,
-				B079C3D61B42B286009EC930 /* BoomVideoTrackerDelegate.h */,
-				B079C3D71B42B286009EC930 /* BusinessRuleExecuterDelegate.h */,
-				B079C3D81B42B286009EC930 /* mraid.js */,
-				B079C3D91B42B286009EC930 /* YTPlayerView-iframe-player.html */,
+				B0FFA4441B4BD38000A165C5 /* AnalyticsTrackingDelegate.h */,
+				B0FFA4451B4BD38000A165C5 /* BMBasePlayerViewController.h */,
+				B0FFA4461B4BD38000A165C5 /* BMBusinessRuleExecuter.h */,
+				B0FFA4471B4BD38000A165C5 /* BMResourceManager.h */,
+				B0FFA4481B4BD38000A165C5 /* BMVideoData.h */,
+				B0FFA4491B4BD38000A165C5 /* BoomVideoTrackerDelegate.h */,
+				B0FFA44A1B4BD38000A165C5 /* BusinessRuleExecuterDelegate.h */,
 			);
 			path = BoomVideoVAST_SDKLibrary;
 			sourceTree = "<group>";
@@ -315,6 +309,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BoomVideoIosExtension",
+					"$(PROJECT_DIR)/BoomVideoIosExtension/include",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -332,6 +328,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BoomVideoIosExtension",
+					"$(PROJECT_DIR)/BoomVideoIosExtension/include",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -358,6 +356,7 @@
 				B079C3C91B42B175009EC930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

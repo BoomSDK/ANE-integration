@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>64D41AE0-6664-497F-A147-DB0F021BDB0E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>BoomVideoIosExtension</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>2E5526B55A0146A8E77CEEA6B80CC229C1323484</key>
 		<string>https://github.com/BoomSDK/ANE-integration.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ios/BoomVideoIosExtension/BoomVideoIosExtension.xcodeproj/project.xcworkspace</string>
+	<string>ios/BoomVideoIosExtension/BoomVideoIosExtension.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2E5526B55A0146A8E77CEEA6B80CC229C1323484</key>
