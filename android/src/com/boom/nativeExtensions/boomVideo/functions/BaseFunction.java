@@ -12,7 +12,7 @@ import com.adobe.fre.FREObject;
 import com.boom.nativeExtensions.boomVideo.BoomVideoExtension;
 import com.boom.nativeExtensions.boomVideo.BoomVideoExtensionContext;
 
-public class BaseFunction implements FREFunction {
+abstract public class BaseFunction implements FREFunction {
 
 	@Override
 	public FREObject call(FREContext context, FREObject[] args) {

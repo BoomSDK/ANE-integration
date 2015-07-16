@@ -35,7 +35,7 @@ package com.boom.nativeExtensions.boomVideo {
 
 		private function _onStatus(sEvt:StatusEvent):void {
 
-			trace(sEvt.code);
+			dispatchEvent(new BoomVideoEvent(BoomVideoEvent.VideoEvent, sEvt.level));
 		}
 
 		public function init(iOSKey:String, androidKey:String):void {
