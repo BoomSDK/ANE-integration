@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <objc/runtime.h>
 #import "FlashRuntimeExtensions.h"
 #import "BMResourceManager.h"
+#import <GooglePlus/GooglePlus.h>
 
 #import "BoomVideoHelpers.h"
 #import "TypeConversion.h"
@@ -50,7 +52,34 @@ DEFINE_ANE_FUNCTION(showRewardVideo) {
     return NULL;
 }
 
+bool applicationOpenURLSourceApplication(id self, SEL _cmd, UIApplication* application, NSURL* url, NSString* sourceApplication, id annotation) {
+    
+    return [GPPURLHandler handleURL:url sourceApplication:sourceApplication annotation:annotation];
+}
+
 void BoomVideoContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToSet, const FRENamedFunction** functionsToSet) {
+    
+    id delegate = [[UIApplication sharedApplication] delegate];
+    
+    Class objectClass = object_getClass(delegate);
+    
+    NSString *newClassName = [NSString stringWithFormat:@"Custom_%@", NSStringFromClass(objectClass)];
+    Class  modDelegate = NSClassFromString(newClassName);
+    
+    if (modDelegate == nil) {
+        
+        modDelegate = objc_allocateClassPair(objectClass, [newClassName UTF8String], 0);
+        
+        SEL selectorToOverride1 = @selector(application:openURL:sourceApplication:annotation:);
+        
+        Method m1 = class_getInstanceMethod(objectClass, selectorToOverride1);
+        
+        class_addMethod(modDelegate, selectorToOverride1, (IMP)applicationOpenURLSourceApplication, method_getTypeEncoding(m1));
+        
+        objc_registerClassPair(modDelegate);
+    }
+    
+    object_setClass(delegate, modDelegate);
     
     static FRENamedFunction functionMap[] = {
         MAP_FUNCTION(init, NULL),
