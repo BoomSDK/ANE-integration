@@ -232,7 +232,15 @@
 			                <key>UIStatusBarStyle</key>
 			                <string>UIStatusBarStyleBlackOpaque</string>
 			                <key>UIRequiresPersistentWiFi</key>
-			                <string>YES</string>]]></InfoAdditions>
+			                <string>YES</string>
+			                <key>CFBundleURLTypes</key>
+							<array>
+								<dict>
+									<key>CFBundleURLSchemes</key>
+									<array>
+										<string>com.boom.nativeExtensions.BoomVideoTest</string>
+									</array>
+								</dict>]]></InfoAdditions>
     <requestedDisplayResolution>high</requestedDisplayResolution>
   </iPhone>
   <android>
