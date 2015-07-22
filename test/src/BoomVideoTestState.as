@@ -27,7 +27,7 @@ package {
 			super.initialize();
 			
 			_boomVideo = new BoomVideo();
-			_boomVideo.init("ca92b245-7951-43f3-b76d-ab10f9ade5c3", "ca92b245-7951-43f3-b76d-ab10f9ade5c3");
+			_boomVideo.init("9c6543a6-a41e-4657-9178-84210b22d794", "9c6543a6-a41e-4657-9178-84210b22d794");
 
 			_boomVideo.addEventListener(BoomVideoEvent.VideoEvent, _onBoomVideoEvent);
 
