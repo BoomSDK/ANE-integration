@@ -263,7 +263,6 @@
                     <category android:name="android.intent.category.LAUNCHER"/>
                   </intent-filter>
                 </activity>
-                <activity android:name="com.boom.nativeExtensions.boomVideo.BoomVideoActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
                 <activity android:name="com.boomvideo.activities.BMYouTubePlayerViewActivity" android:label="@string/app_name" android:screenOrientation="landscape" />
                 <activity android:name="com.boomvideo.activities.BMOfferlistActivity" android:label="@string/app_name" android:configChanges="orientation|keyboardHidden|screenSize"/>
                 <activity android:name="com.boomvideo.activities.BMNonYoutubePlayerActivity" android:label="@string/app_name" android:screenOrientation="landscape" />

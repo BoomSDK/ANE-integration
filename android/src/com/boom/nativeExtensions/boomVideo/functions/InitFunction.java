@@ -2,7 +2,7 @@ package com.boom.nativeExtensions.boomVideo.functions;
 
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREObject;
-import com.boom.nativeExtensions.boomVideo.BoomVideoActivity;
+import com.boom.nativeExtensions.boomVideo.BoomVideoExtensionContext;
 
 public class InitFunction extends BaseFunction {
 	
@@ -10,7 +10,7 @@ public class InitFunction extends BaseFunction {
 	public FREObject call(FREContext context, FREObject[] args) {
 		super.call(context, args);
 		
-		BoomVideoActivity.key = getStringFromFREObject(args[0]);
+		BoomVideoExtensionContext.key = getStringFromFREObject(args[0]);
 		
 		return null;
 	}

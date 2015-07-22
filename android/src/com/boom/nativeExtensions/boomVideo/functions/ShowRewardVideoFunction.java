@@ -11,7 +11,7 @@ public class ShowRewardVideoFunction extends BaseFunction {
 	public FREObject call(FREContext context, FREObject[] args) {
 		super.call(context, args);
 		
-		BoomVideoExtension.context.launchActivity(BoomVideoResourceManager.VIDEO_PLAYER_TYPE.REWARDS);
+		BoomVideoExtension.context.launchVideo(BoomVideoResourceManager.VIDEO_PLAYER_TYPE.REWARDS);
 		
 		return null;
 	}

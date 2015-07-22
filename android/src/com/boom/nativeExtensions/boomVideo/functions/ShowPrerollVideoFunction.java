@@ -11,7 +11,7 @@ public class ShowPrerollVideoFunction extends BaseFunction {
 	public FREObject call(FREContext context, FREObject[] args) {
 		super.call(context, args);
 		
-		BoomVideoExtension.context.launchActivity(BoomVideoResourceManager.VIDEO_PLAYER_TYPE.PREROLL);
+		BoomVideoExtension.context.launchVideo(BoomVideoResourceManager.VIDEO_PLAYER_TYPE.PREROLL);
 		
 		return null;
 	}
