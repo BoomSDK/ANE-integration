@@ -13,8 +13,6 @@ android/bin/res
 android/gen
 android/proguard-project.txt
 android/project.properties
-bin/BoomVideo.ane
-bin/BoomVideo.swc
 *.xcuserstate
 tmp
 bin/*.dSYM/Contents/Info.plist
