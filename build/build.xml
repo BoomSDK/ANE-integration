@@ -44,17 +44,14 @@
 			<classpath>
 				<pathelement location="${android.sdk}/android.jar" />
 				<pathelement location="../android/libs/FlashRuntimeExtensions.jar" />
-				<pathelement location="../android/libs/android-support-v4.jar" />
-				<pathelement location="../android/libs/boomvideo_1.6.jar" />
+				<pathelement location="../android/libs/boomvideo_1.7.jar" />
 				<pathelement location="../android/libs/google-play-services.jar" />
 			</classpath>
 		</javac>
 		
 		<mkdir dir="../android/temp/zip" />
-		<unzip src="../android/libs/android-support-v4.jar" dest="../android/temp/zip"/>
-		<unzip src="../android/libs/boomvideo_1.6.jar" dest="../android/temp/zip"/>
+		<unzip src="../android/libs/boomvideo_1.7.jar" dest="../android/temp/zip"/>
 		<unzip src="../android/libs/google-play-services.jar" dest="../android/temp/zip"/>
-		<copydir src="../android/temp/zip/android" dest="../android/temp/classes/android"/>
 		<copydir src="../android/temp/zip/com" dest="../android/temp/classes/com"/>
 
 		<mkdir dir="../temp/android/" />

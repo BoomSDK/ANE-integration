@@ -1,6 +1,6 @@
 <extension xmlns="http://ns.adobe.com/air/extension/4.0">
 	<id>com.boom.nativeExtensions.BoomVideo</id>
-	<versionNumber>1.0.0</versionNumber>
+	<versionNumber>1.0.1</versionNumber>
 	<platforms>
 		<platform name="iPhone-ARM">
 			<applicationDeployment>

@@ -42,7 +42,7 @@ public class BoomVideoExtensionContext extends FREContext implements BoomVideoTr
 
 	public void launchVideo(BoomVideoResourceManager.VIDEO_PLAYER_TYPE type) {
 		
-		BoomVideoResourceManager.getInstance(BoomVideoExtension.context.getContext()).showVideoAds(key, this, type);
+		BoomVideoResourceManager.getInstance().showVideoAds(key, this, type);
 	}
 	
 	@Override

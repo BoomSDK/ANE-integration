@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum{
+typedef NS_ENUM(NSInteger, BOOMEventErrorCode){
+    
+    kAdLoaded,
+    kAdClosed,
     
     kVideoStarted = 100,
     kVideoPaused,
@@ -33,7 +36,7 @@ typedef enum{
     kNetworkNotAvailableError = - 200,
     kUnknownError,
     
-} BOOMEventErrorCode;
+};
 
 @protocol BoomVideoTrackerDelegate <NSObject>
 

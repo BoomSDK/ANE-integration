@@ -195,6 +195,10 @@
     triggerEvent(mraid.EVENTS.READY);
   };
  
+ mraid.triggerErrorEvent = function(errorMessage, nameOfFunction) {
+ triggerEvent(mraid.EVENTS.ERROR,errorMessage,nameOfFunction);
+ };
+ 
   mraid.triggerSizeChangeEvent = function(width, height) {
     triggerEvent(mraid.EVENTS.SIZE_CHANGE, width, height);
   };
@@ -483,6 +487,7 @@
   
   /*common method to fire event*/
   var triggerEvent = function(event) {
+
     var args = Array.prototype.slice.call(arguments);
     args.shift();
     var eventListeners = listeners[event];
