@@ -1,3 +1,6 @@
+v1.0.2
+- updated to a new Android SDK v1.7
+
 v1.0.1
 - iOS SDK v1.7
 - Android SDK v1.7
