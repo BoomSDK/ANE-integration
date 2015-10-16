@@ -10,6 +10,7 @@
 		<option>-framework JavaScriptCore</option>
 		<option>-framework MediaPlayer</option>
 		<option>-weak_framework Social</option>
+		<option>–lxml2</option>
 	</linkerOptions>
 	
 	 <packagedDependencies>

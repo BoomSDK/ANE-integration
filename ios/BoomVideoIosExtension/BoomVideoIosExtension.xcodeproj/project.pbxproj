@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0274B891B6782A80078740A /* libBoomVideoVAST_SDKLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0274B881B6782A80078740A /* libBoomVideoVAST_SDKLibrary.a */; };
 		B079C3B91B42B175009EC930 /* BoomVideoIosExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B079C3B81B42B175009EC930 /* BoomVideoIosExtension.m */; };
 		B079C3DD1B42B2C5009EC930 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C3DC1B42B2C5009EC930 /* JavaScriptCore.framework */; };
 		B079C3DF1B42B2CE009EC930 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C3DE1B42B2CE009EC930 /* AddressBook.framework */; };
@@ -24,6 +23,7 @@
 		B079C3F51B42B316009EC930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C3F41B42B316009EC930 /* Foundation.framework */; };
 		B079C3F81B42B381009EC930 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C3F61B42B381009EC930 /* GoogleOpenSource.framework */; };
 		B079C3F91B42B381009EC930 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C3F71B42B381009EC930 /* GooglePlus.framework */; };
+		B0CEEAAC1BD12DDF0012A5FC /* libBoomVideoVAST_SDKLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CEEAAB1BD12DDF0012A5FC /* libBoomVideoVAST_SDKLibrary.a */; settings = {ASSET_TAGS = (); }; };
 		B0FFA44F1B4BDA0E00A165C5 /* BoomVideoHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FFA44E1B4BDA0E00A165C5 /* BoomVideoHelpers.m */; };
 		B0FFA4521B4BDE4400A165C5 /* TypeConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FFA4511B4BDE4400A165C5 /* TypeConversion.m */; };
 /* End PBXBuildFile section */
@@ -41,9 +41,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B0274B861B6782A80078740A /* BMResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMResourceManager.h; sourceTree = "<group>"; };
-		B0274B871B6782A80078740A /* BoomVideoTrackerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoomVideoTrackerDelegate.h; sourceTree = "<group>"; };
-		B0274B881B6782A80078740A /* libBoomVideoVAST_SDKLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBoomVideoVAST_SDKLibrary.a; sourceTree = "<group>"; };
 		B079C3B31B42B175009EC930 /* libBoomVideoIosExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBoomVideoIosExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B079C3B81B42B175009EC930 /* BoomVideoIosExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoomVideoIosExtension.m; sourceTree = "<group>"; };
 		B079C3CD1B42B19A009EC930 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
@@ -62,6 +59,9 @@
 		B079C3F41B42B316009EC930 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B079C3F61B42B381009EC930 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
 		B079C3F71B42B381009EC930 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		B0CEEAAB1BD12DDF0012A5FC /* libBoomVideoVAST_SDKLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBoomVideoVAST_SDKLibrary.a; sourceTree = "<group>"; };
+		B0CEEAAF1BD12E2F0012A5FC /* BMResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMResourceManager.h; sourceTree = "<group>"; };
+		B0CEEAB01BD12E2F0012A5FC /* BoomVideoTrackerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoomVideoTrackerDelegate.h; sourceTree = "<group>"; };
 		B0FFA44D1B4BDA0E00A165C5 /* BoomVideoHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoomVideoHelpers.h; sourceTree = "<group>"; };
 		B0FFA44E1B4BDA0E00A165C5 /* BoomVideoHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoomVideoHelpers.m; sourceTree = "<group>"; };
 		B0FFA4501B4BDE4400A165C5 /* TypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeConversion.h; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 				B079C3E71B42B2E5009EC930 /* CoreText.framework in Frameworks */,
 				B079C3E51B42B2DF009EC930 /* CoreMotion.framework in Frameworks */,
 				B079C3E31B42B2D9009EC930 /* CoreLocation.framework in Frameworks */,
-				B0274B891B6782A80078740A /* libBoomVideoVAST_SDKLibrary.a in Frameworks */,
+				B0CEEAAC1BD12DDF0012A5FC /* libBoomVideoVAST_SDKLibrary.a in Frameworks */,
 				B079C3F81B42B381009EC930 /* GoogleOpenSource.framework in Frameworks */,
 				B079C3E11B42B2D3009EC930 /* AssetsLibrary.framework in Frameworks */,
 				B079C3DF1B42B2CE009EC930 /* AddressBook.framework in Frameworks */,
@@ -95,23 +95,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B0274B841B6782A80078740A /* include */ = {
-			isa = PBXGroup;
-			children = (
-				B0274B851B6782A80078740A /* BoomVideoVAST_SDKLibrary */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		B0274B851B6782A80078740A /* BoomVideoVAST_SDKLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				B0274B861B6782A80078740A /* BMResourceManager.h */,
-				B0274B871B6782A80078740A /* BoomVideoTrackerDelegate.h */,
-			);
-			path = BoomVideoVAST_SDKLibrary;
-			sourceTree = "<group>";
-		};
 		B079C3AA1B42B175009EC930 = {
 			isa = PBXGroup;
 			children = (
@@ -146,8 +129,8 @@
 		B079C3B51B42B175009EC930 /* BoomVideoIosExtension */ = {
 			isa = PBXGroup;
 			children = (
-				B0274B841B6782A80078740A /* include */,
-				B0274B881B6782A80078740A /* libBoomVideoVAST_SDKLibrary.a */,
+				B0CEEAAD1BD12E2F0012A5FC /* include */,
+				B0CEEAAB1BD12DDF0012A5FC /* libBoomVideoVAST_SDKLibrary.a */,
 				B079C3CD1B42B19A009EC930 /* FlashRuntimeExtensions.h */,
 				B079C3B81B42B175009EC930 /* BoomVideoIosExtension.m */,
 				B0FFA44D1B4BDA0E00A165C5 /* BoomVideoHelpers.h */,
@@ -156,6 +139,23 @@
 				B0FFA4511B4BDE4400A165C5 /* TypeConversion.m */,
 			);
 			path = BoomVideoIosExtension;
+			sourceTree = "<group>";
+		};
+		B0CEEAAD1BD12E2F0012A5FC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B0CEEAAE1BD12E2F0012A5FC /* BoomVideoVAST_SDKLibrary */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B0CEEAAE1BD12E2F0012A5FC /* BoomVideoVAST_SDKLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				B0CEEAAF1BD12E2F0012A5FC /* BMResourceManager.h */,
+				B0CEEAB01BD12E2F0012A5FC /* BoomVideoTrackerDelegate.h */,
+			);
+			path = BoomVideoVAST_SDKLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

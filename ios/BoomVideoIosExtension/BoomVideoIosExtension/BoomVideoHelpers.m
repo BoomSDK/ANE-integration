@@ -41,7 +41,7 @@
     [self.resourceManager showVideoForGUID:key withType:BMOfferList];
 }
 
-- (void) boomVideoTrackCallbackWithEvent:(BOOMEventErrorCode) eventCode withData:(NSDictionary*)detailData {
+- (void) boomVideoTrackCallbackWithEvent:(BOOMEventCode) eventCode withData:(NSDictionary*)detailData {
     
     // BOOMEventErrorCode - It will give the event codes
     // detailData - It is a dictionary which will contain three key-value pairs:
